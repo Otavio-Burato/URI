@@ -1,4 +1,6 @@
 // https://github.com/Otavio-Burato/URI/tree/main/rust/src
+// 1002 - Área do Círculo
+// Rust (1.48) {beta}
 use std::io;
 
 /// # Entrada

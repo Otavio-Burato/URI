@@ -1,5 +1,5 @@
 // https://github.com/Otavio-Burato/URI/tree/main/rust/src
-// 1003 - Soma Simples
+// 1004 - Produto Simples
 // Rust (1.48) {beta}
 use std::io;
 
@@ -16,14 +16,14 @@ fn main() {
 }
 
 /// # Saída
-/// Imprima a mensagem "SOMA" com todas as letras maiúsculas,
-/// com um espaço em branco antes e depois da igualdade seguido
-/// pelo valor correspondente à soma de A e B. Como todos os
-/// problemas, não esqueça de imprimir o fim de linha após o
-/// resultado, caso contrário, você receberá "Presentation Error".
+/// Imprima a mensagem "PROD" e a variável PROD
+/// conforme exemplo abaixo, com um espaço em branco
+/// antes e depois da igualdade. Não esqueça de imprimir
+/// o fim de linha após o produto, caso contrário seu programa
+/// apresentará a mensagem: “Presentation Error”.
 pub fn saida(input_a: String, input_b: String) -> String {
     let a: i32 = input_a.trim().parse().unwrap();
     let b: i32 = input_b.trim().parse().unwrap();
 
-    format!("SOMA = {}", a + b)
+    format!("PROD = {}", a * b)
 }

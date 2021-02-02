@@ -1,4 +1,6 @@
 // https://github.com/Otavio-Burato/URI/tree/main/rust/src
+// 1001 - Extremamente Básico
+// Rust (1.48) {beta}
 use std::io;
 
 /// # Entrada
