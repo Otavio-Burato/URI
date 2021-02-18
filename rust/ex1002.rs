@@ -26,3 +26,10 @@ pub fn saida(input_a: String) -> String {
 
     format!("A={:.4}", PI * (a * a))
 }
+
+#[test]
+fn ex1002() {
+    assert_eq!(saida(String::from("2.00")), "A=12.5664");
+    assert_eq!(saida(String::from("100.64")), "A=31819.3103");
+    assert_eq!(saida(String::from("150.00")), "A=70685.7750");
+}

@@ -25,3 +25,19 @@ pub fn saida(input_a: String, input_b: String) -> String {
 
     format!("X = {}", a + b)
 }
+
+#[test]
+fn ex1001() {
+    assert_eq!(
+        saida(String::from("10"), String::from("9")),
+        "X = 19"
+    );
+    assert_eq!(
+        saida(String::from("-10"), String::from("4")),
+        "X = -6"
+    );
+    assert_eq!(
+        saida(String::from("15"), String::from("-7")),
+        "X = 8"
+    );
+}

@@ -27,3 +27,19 @@ pub fn saida(input_a: String, input_b: String) -> String {
 
     format!("SOMA = {}", a + b)
 }
+
+#[test]
+fn ex1003() {
+    assert_eq!(
+        saida(String::from("30"), String::from("10")),
+        "SOMA = 40"
+    );
+    assert_eq!(
+        saida(String::from("-30"), String::from("10")),
+        "SOMA = -20"
+    );
+    assert_eq!(
+        saida(String::from("0"), String::from("0")),
+        "SOMA = 0"
+    );
+}

@@ -29,3 +29,13 @@ fn calc(mut r: f64) -> f64 {
     const PI: f64 = 3.14159;
     (4.0 / 3.0) * PI * r.powi(3)
 }
+
+#[test]
+fn ex1011() {
+    assert_eq!(saida(String::from("3")), "VOLUME = 113.097");
+    assert_eq!(saida(String::from("15")), "VOLUME = 14137.155");
+    assert_eq!(
+        saida(String::from("1523")),
+        "VOLUME = 14797486501.627"
+    );
+}

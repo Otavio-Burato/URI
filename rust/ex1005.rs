@@ -32,3 +32,19 @@ pub fn saida(input_a: String, input_b: String) -> String {
 fn calcular_media(a: f64, b: f64) -> f64 {
     ((a * 3.5) + (b * 7.5)) / (3.5 + 7.5)
 }
+
+#[test]
+fn ex1005() {
+    assert_eq!(
+        saida(String::from("5.0"), String::from("7.1")),
+        "MEDIA = 6.43182"
+    );
+    assert_eq!(
+        saida(String::from("0.0"), String::from("7.1")),
+        "MEDIA = 4.84091"
+    );
+    assert_eq!(
+        saida(String::from("10.0"), String::from("10.0")),
+        "MEDIA = 10.00000"
+    );
+}

@@ -34,3 +34,34 @@ pub fn saida(input_a: String, input_b: String, input_c: String, input_d: String)
 fn diferenca(a: i32, b: i32, c: i32, d: i32) -> i32 {
     a * b - c * d
 }
+
+#[test]
+fn ex1007() {
+    assert_eq!(
+        saida(
+            String::from("5"),
+            String::from("6"),
+            String::from("7"),
+            String::from("8")
+        ),
+        "DIFERENCA = -26"
+    );
+    assert_eq!(
+        saida(
+            String::from("0"),
+            String::from("0"),
+            String::from("7"),
+            String::from("8")
+        ),
+        "DIFERENCA = -56"
+    );
+    assert_eq!(
+        saida(
+            String::from("5"),
+            String::from("6"),
+            String::from("-7"),
+            String::from("8")
+        ),
+        "DIFERENCA = 86"
+    );
+}

@@ -32,3 +32,31 @@ pub fn saida(_input_a: String, input_b: String, input_c: String) -> String {
 fn salary(b: f64, c: f64) -> f64 {
     b + (0.15 * c)
 }
+
+#[test]
+fn ex1009() {
+    assert_eq!(
+        saida(
+            String::from("JOAO"),
+            String::from("500.00"),
+            String::from("1230.30")
+        ),
+        "TOTAL = R$ 684.54"
+    );
+    assert_eq!(
+        saida(
+            String::from("PEDRO"),
+            String::from("700.00"),
+            String::from("0.00")
+        ),
+        "TOTAL = R$ 700.00"
+    );
+    assert_eq!(
+        saida(
+            String::from("MANGOJATA"),
+            String::from("1700.00"),
+            String::from("1230.50")
+        ),
+        "TOTAL = R$ 1884.58"
+    );
+}

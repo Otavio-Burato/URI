@@ -27,3 +27,19 @@ pub fn saida(input_a: String, input_b: String) -> String {
 
     format!("PROD = {}", a * b)
 }
+
+#[test]
+fn ex1004() {
+    assert_eq!(
+        saida(String::from("3"), String::from("9")),
+        "PROD = 27"
+    );
+    assert_eq!(
+        saida(String::from("-30"), String::from("10")),
+        "PROD = -300"
+    );
+    assert_eq!(
+        saida(String::from("0"), String::from("9")),
+        "PROD = 0"
+    );
+}

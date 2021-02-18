@@ -34,3 +34,31 @@ pub fn saida(input_a: String, input_b: String, input_c: String) -> String {
 fn calcular_media(a: f64, b: f64, c: f64) -> f64 {
     ((a * 2.0) + (b * 3.0) + (c * 5.0)) / (2.0 + 3.0 + 5.0)
 }
+
+#[test]
+fn ex1006() {
+    assert_eq!(
+        saida(
+            String::from("5.0"),
+            String::from("6.0"),
+            String::from("7.0")
+        ),
+        "MEDIA = 6.3"
+    );
+    assert_eq!(
+        saida(
+            String::from("5.0"),
+            String::from("10.0"),
+            String::from("10.0")
+        ),
+        "MEDIA = 9.0"
+    );
+    assert_eq!(
+        saida(
+            String::from("10.0"),
+            String::from("10.0"),
+            String::from("5.0")
+        ),
+        "MEDIA = 7.5"
+    );
+}

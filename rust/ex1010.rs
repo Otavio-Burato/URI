@@ -44,3 +44,19 @@ fn calc(mut a: std::str::SplitWhitespace) -> f64 {
     };
     number * price
 }
+
+#[test]
+fn ex1010() {
+    assert_eq!(
+        saida(String::from("12 1 5.30"), String::from("16 2 5.10")),
+        "VALOR A PAGAR: R$ 15.50"
+    );
+    assert_eq!(
+        saida(String::from("13 2 15.30"), String::from("161 4 5.20")),
+        "VALOR A PAGAR: R$ 51.40"
+    );
+    assert_eq!(
+        saida(String::from("1 1 15.10"), String::from("2 1 15.10")),
+        "VALOR A PAGAR: R$ 30.20"
+    );
+}
